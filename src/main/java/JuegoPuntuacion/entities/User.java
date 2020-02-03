@@ -3,8 +3,9 @@ package JuegoPuntuacion.entities;
 public class User {
 
     private int id;
-    private int user;
-    private int score;
+    private String name;
+    private String lastName;
+    private String dni;
 
     // Builder
     public User() {
@@ -19,19 +20,27 @@ public class User {
         this.id = id;
     }
 
-    public int getUser() {
-        return user;
+    public String getName() {
+        return name;
     }
 
-    public void setUser(int user) {
-        this.user = user;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getScore() {
-        return score;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 }

@@ -1,6 +1,5 @@
 package JuegoPuntuacion.Manager;
 
-import JuegoPuntuacion.entities.Game;
 import JuegoPuntuacion.entities.User;
 
 import java.util.ArrayList;
@@ -54,7 +53,7 @@ public class UserManager {
     }
 
     // Devuelve una lista de registros
-    public List<User> getUsers(){
+    public List<User> getUsers() {
         return new ArrayList<>(listUsers.values());
     }
 

@@ -1,15 +1,18 @@
 package JuegoPuntuacion.controller;
 
 import JuegoPuntuacion.Manager.UserManager;
+import JuegoPuntuacion.entities.Game;
 import JuegoPuntuacion.entities.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 public class UserController {
 
-    private UserManager userManager =  new UserManager();
+    private UserManager userManager = new UserManager();
 
     @GetMapping("/game/user")
     public List<User> getUserManager() {
@@ -29,18 +32,17 @@ public class UserController {
     }
 
     @DeleteMapping("/game/user/{id}")
-    public void deleteUser(@PathVariable Integer id){
+    public void deleteUser(@PathVariable Integer id) {
         // Elimina un registro
         this.userManager.deleteUser(id);
     }
 
 
     @PutMapping("/game/user")
-    public void UpdateUser(@RequestBody User user){
+    public void UpdateUser(@RequestBody User user) {
         this.userManager.updateUser(user);
 
     }
-
 
 
 }

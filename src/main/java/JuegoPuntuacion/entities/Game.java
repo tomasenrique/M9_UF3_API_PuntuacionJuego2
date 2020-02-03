@@ -10,7 +10,6 @@ public class Game {
     public Game() {
     }
 
-
     // Setter and Getter
     public int getId() {
         return id;
@@ -35,6 +34,5 @@ public class Game {
     public void setUser(int user) {
         this.user = user;
     }
-
 
 }

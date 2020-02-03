@@ -4,7 +4,6 @@ import JuegoPuntuacion.entities.Game;
 import JuegoPuntuacion.Manager.GameManager;
 import org.springframework.web.bind.annotation.*;
 
-
 import java.util.List;
 
 
@@ -15,7 +14,7 @@ public class GameController {
 
     @PostMapping("/game/score")
     public void addScore(@RequestBody Game game) {
-        this.gameManager.addGame(game); // aqui se indica la cantidad de parametros a pasar, en este caso 2
+        this.gameManager.addGame(game);
     }
 
     @GetMapping("/game/score")
