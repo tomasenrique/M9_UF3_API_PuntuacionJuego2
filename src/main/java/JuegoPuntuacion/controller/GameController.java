@@ -1,7 +1,7 @@
 package JuegoPuntuacion.controller;
 
 import JuegoPuntuacion.entities.Game;
-import JuegoPuntuacion.entities.GameManager;
+import JuegoPuntuacion.Manager.GameManager;
 import org.springframework.web.bind.annotation.*;
 
 

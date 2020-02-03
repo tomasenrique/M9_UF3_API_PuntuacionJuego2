@@ -1,15 +1,14 @@
 package JuegoPuntuacion.entities;
 
-public class Game {
+public class User {
 
     private int id;
     private int user;
     private int score;
 
-    // Builders
-    public Game() {
+    // Builder
+    public User() {
     }
-
 
     // Setter and Getter
     public int getId() {
@@ -20,14 +19,6 @@ public class Game {
         this.id = id;
     }
 
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
     public int getUser() {
         return user;
     }
@@ -36,5 +27,11 @@ public class Game {
         this.user = user;
     }
 
+    public int getScore() {
+        return score;
+    }
 
+    public void setScore(int score) {
+        this.score = score;
+    }
 }

@@ -1,4 +1,6 @@
-package JuegoPuntuacion.entities;
+package JuegoPuntuacion.Manager;
+
+import JuegoPuntuacion.entities.Game;
 
 import java.util.ArrayList;
 import java.util.List;
