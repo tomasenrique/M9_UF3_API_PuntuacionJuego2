@@ -1,0 +1,9 @@
+Afegir operacions CRUD a l'API de puntuacions de partides
+
+Cal crear un nou endpoint: /joc/usuari on tindrem les operacions CRUD:
+- mètode GET a /joc/usuari/{id} --> mostrarà les dades del usuari amb id={id}
+- mètode POST a /joc/usuari/ enviant un json amb les dades d'un usuari --> crearà un usuari
+- mètode PUT a a /joc/usuari/ enviant un json amb les dades d'un usuari --> modificarà un usuari
+- mètode DELETE a a /joc/usuari/{id} --> esborrarà un usuari amb id={id}
+
+Entregueu-ho al mateix repositori
